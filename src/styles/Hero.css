@@ -1,11 +1,24 @@
 .hero {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-
+  position: relative;
   color: white;
   padding: 100px 20px;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.3; /* adjust for visual clarity */
 }
 
 .hero-container {
+  position: relative;
+  z-index: 1; /* content comes above the video */
   display: flex;
   align-items: center;
   justify-content: space-between;

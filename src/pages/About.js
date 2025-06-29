@@ -9,6 +9,7 @@ const About = () => (
             </div>
             <div className="about-content">
                 <h2>About Me</h2>
+                
                 <p>
                     I'm Gourab Dutta — a Full Stack Developer passionate about solving problems with the MERN stack.
                 </p>

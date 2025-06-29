@@ -1,8 +1,14 @@
 import '../styles/Hero.css';
-import profileImg from '../assets/photo.jpg';
+import profileImg from '../assets/photo1.jpg';
+import background from '../assets/background2.mp4';
 
 const Hero = () => (
     <section id="home" className="hero">
+        <video autoPlay loop muted className="hero-video">
+            <source src={background} type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
         <div className="hero-container">
             <div className="hero-text">
                 <h1>Hi, I'm Gourab Dutta</h1>
